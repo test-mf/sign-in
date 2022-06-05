@@ -27,7 +27,7 @@ export default {
 			);
 
 			userSignIn(username, password).then(() => {
-				invokeEvent("userSigned");
+				invokeEvent("userSignIn");
 				history.pushState(null, null, "#/dashboard");
 			});
 		},
